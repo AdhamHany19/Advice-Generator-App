@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color: #202632;
+  --main-color: #313a49;
+}
+/* start media queries */
+@media (max-width: 768px) {
+  .box {
+    width: 90%; /* Example: Adjust width for smaller screens */
+    height: auto; /* Example: Allow height to adjust based on content */
+  }
+
+  p {
+    font-size: 20px; /* Example: Decrease font size on smaller screens */
+  }
+  .dice {
+    margin-top: 270px;
+  }
+  .pattern img {
+    display: none;
+  }
+}
+/* end media queries */
+body {
+  background-color: var(--bg-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: var(--main-color);
+  width: 600px;
+  height: 350px;
+  border-radius: 15px;
+}
+.num h4 {
+  margin-top: 50px;
+  color: hsl(150, 100%, 66%);
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 4px;
+}
+.advice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+p {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+  margin-top: 50px;
+}
+.pattern {
+  position: absolute;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.pattern img {
+  position: absolute;
+}
+.btn {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+}
+.dice {
+  margin-top: 170px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dice:hover {
+  box-shadow: 3px 3px 10px hsl(150, 100%, 66%);
+}
